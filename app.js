@@ -34,6 +34,7 @@ app.use(express.static(publicDirectory));
 
 app.set('view engine', 'html');
 
+// PARA CONECTAR BANCO DE DADOS POSTERIORMENTE//
 
 // db.connect((error) => {
 //     if (error) {
@@ -50,6 +51,8 @@ app.set('view engine', 'html');
 //       console.log(results);
 //     }
 //   });
+
+// PARA CONECTAR BANCO DE DADOS POSTERIORMENTE//
 
 
 //definindo rotas

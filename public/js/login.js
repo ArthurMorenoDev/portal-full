@@ -5,6 +5,11 @@ loginForm.addEventListener('submit', async (event) => {
 
   const loginInput = document.getElementById('login');
   const senhaInput = document.getElementById('senha');
+
+  if (!loginInput.value || !senhaInput.value) {
+    alert('Preencha todos os campos.'); // Exibe um alerta se algum campo estiver vazio
+    return; // Interrompe a execução da função
+  }
   
 
   const loginData = {
@@ -29,7 +34,7 @@ loginForm.addEventListener('submit', async (event) => {
         console.log(response)
       window.location.href = './dashboard2.html'; // Redireciona para a página dashboard2
       
-    } else {
+    } else {~~
       // Exibir uma mensagem de erro
       console.error('Login failed');
       alert('Usuário ou senha inválidos. Tente novamente.'); // Exibe um alerta de erro

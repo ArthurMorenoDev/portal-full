@@ -15,10 +15,10 @@
 <body>
   <!-- top navigation bar -->
   <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar">
-    <div class="container-fluid">
+    <div class="container-fluid ms-5 ">
       <a href="#" class="navbar-brand">
         <img src="images/marca.png" alt="logo" width="89" class="navbar-logo mb-"
-          style="position: absolute; top: 0; left: 0;">
+          style="position: absolute; top: 0; left: 4;">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
@@ -42,7 +42,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
-                <a href="index.html" class="dropdown-item">Log Out</a>
+                <a href="index.html" class="dropdown-item">Sair</a>
               </li>
             </ul>
           </li>
@@ -106,7 +106,7 @@
           <li>
             <a href="consulta.html" class="nav-link px-3 ">
               <span class="me-2"><i class="bi bi-table"></i></span>
-              <span>consultar IN-100</span>
+              <span>Consultar IN-100</span>
             </a>
           </li>
         </ul>
@@ -118,34 +118,37 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 p-5">
-          <div id="nomeUser" class="fw-bold text-uppercase p-2" storedName()></div>
+
+          <!-- mostra o nome do usuario na tela -->
+          <!-- <div id="nomeUser" class="fw-bold text-uppercase p-2" storedName()></div>   -->
+          <!-- mostra o nome do usuario na tela -->
           <h4><i class="bi bi-speedometer2">Dashboard</i></h4>
-          <h5>tela de pareceiros</h5>
+
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3 mb-3">
           <div class="card bg-secondary text-white h-100">
-            <div class="card-body py-3">Primary Card</div>
+            <div class="card-body py-3">Propostas Digitadas-</div>
 
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card bg-warning text-white h-100">
-            <div class="card-body py-3">Warning Card</div>
+            <div class="card-body py-3">Analise Banco/Pend-</div>
 
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card bg-success text-white h-100">
-            <div class="card-body py-3">Success Card</div>
+            <div class="card-body py-3">Propostas Cms/Pagas-</div>
 
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="card bg-danger text-white h-100">
-            <div class="card-body py-3">Danger Card</div>
+            <div class="card-body py-3">Propostas Canceladas-</div>
 
           </div>
         </div>
@@ -156,7 +159,7 @@
     </div>
     <section>
       <div class="h-25 w-20">
-        <h4>produração</h4>
+        <h4 class="ms-5">Produção</h4>
         <canvas id="graficoProd1" class="h-10 p-4"></canvas>
       </div>
     </section>
